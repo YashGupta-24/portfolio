@@ -33,8 +33,8 @@ function Work() {
           })
         }
       </div>
-      <h1 className='text-3xl md:text-6xl text-heading'>Other Projects</h1>
-      <div className='w-3/4 my-16'>
+      <h1 className='text-3xl md:text-6xl text-heading font-heading'>Other Projects</h1>
+      <div className='w-3/4 my-16 transit'>
       {
           data.map((item, index) => {
             return (
@@ -45,7 +45,7 @@ function Work() {
                 <h1 className='text-md sm:text-xl my-1 font-heading'>{item.name}</h1>
                 <p className='text-sm sm:text-base hidden md:block font-body font-semibold'>{item.description}</p>
                 </a>
-                <hr className='border-[1px] border-gray-300'/>
+                <hr className='border-[1px] border-heading'/>
               </div>
             )
           })

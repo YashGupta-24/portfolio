@@ -5,7 +5,7 @@ import { FcInfo } from "react-icons/fc";
 function Hero() {
 
     return (
-        <div className='h-fit w-3/4 py-4 mt-20'>
+        <div className='h-fit w-3/4 py-4 mt-20 '>
             <div className=' h-full w-full md:w-1/2'>
                 <img src={picture} alt="" className='h-20 w-20 sm:h-24 sm:w-24 my-4' />
                 <div className='my-2 border-[1px] border-black w-fit px-2 rounded-2xl bg-gray-300 flex justify-between items-center text-xs sm:text-base gap-2 font-body font-semibold'> <FcInfo /> Available for freelance</div>

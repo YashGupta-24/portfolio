@@ -10,7 +10,7 @@ function Projects() {
   }, []);
  
   return (
-    <div className='h-full w-3/4 my-20'>
+    <div className='h-full w-3/4 my-20 transit'>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-5'>
         {
           data.map((item, index) => {

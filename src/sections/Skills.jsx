@@ -57,7 +57,7 @@ function Skills() {
   ]
 
   return (
-    <div className='h-full md:h-screen w-3/4 flex flex-col mb-20'>
+    <div className='h-full md:h-screen w-3/4 flex flex-col mb-20 transit'>
       <div>
         <h1 className='text-4xl md:text-6xl my-5 font-heading text-heading'>Skills</h1>
       </div>

@@ -11,7 +11,7 @@ function About() {
     }, []);
 
     return (
-        <div className='h-full w-3/4 flex flex-col lg:flex-row justify-center items-center'>
+        <div className='h-full w-3/4 flex flex-col lg:flex-row justify-center items-center transit'>
             <div className='lg:w-1/2 h-full'>
                 <h1 className='text-4xl md:text-6xl my-5 font-heading text-heading'>About</h1>
                 {
