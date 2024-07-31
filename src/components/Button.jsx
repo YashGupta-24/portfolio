@@ -6,7 +6,7 @@ function Button({name, link, show}) {
       {
         show? <h1 className='text-xl my-5 font-body font-semibold'>Got a project?</h1>: <div></div>
       }
-      <button className='p-4 sm:p-6 md:p-10 rounded-3xl bg-tertiary text-lg sm:text-2xl md:text-6xl text-white font-heading hover:bg-hover transition-all duration-300'><Link to={link}>{name}</Link></button>
+      <button className='p-4 sm:p-6 md:p-10 rounded-xl sm:rounded-3xl bg-tertiary text-lg sm:text-2xl md:text-6xl text-white font-heading hover:bg-hover transition-all duration-300'><Link to={link}>{name}</Link></button>
     </div>
   )
 }
