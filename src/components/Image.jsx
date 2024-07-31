@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import Socials from './Socials'
 import { HiArrowLongRight } from "react-icons/hi2";
+import P1 from '../assets/Images/P1.jpg';
+import P2 from '../assets/Images/P2.jpg';
+import P3 from '../assets/Images/P3.jpg';
 
 function Image() {
     const [index,setIndex]=useState(0)
-    const slides = ['src/assets/Images/P1.jpg','src/assets/Images/P2.jpg','src/assets/Images/P3.jpg']
+    const slides = [P1, P2, P3]
     useEffect(()=>{
         const interval=setInterval(()=>setIndex((prev)=>(prev+1)%slides.length),4000)
         return ()=>clearInterval(interval)

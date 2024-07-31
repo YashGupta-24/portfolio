@@ -1,61 +1,65 @@
 import {Link} from 'react-router-dom'
 import { HiArrowRight } from "react-icons/hi";
+import FAT from '../assets/Projects/FAT.png'
+import CXI from '../assets/Projects/CXI.png'
+import WF from '../assets/Projects/WF.png'
+import TM from '../assets/Projects/TM.png'
 function Projects() {
   const data=[
     {
         name: "Fetch-a-Thon 2.0",
         description: "Event Page",
         link: "",
-        image: "src/assets/Projects/FAT.png",
+        image: FAT,
         displayMain:true
     },
     {
         name: "CXI",
         description: "Landing Page",
         link: "",
-        image: "src/assets/Projects/CXI.png",
+        image: CXI,
         displayMain:true
     },
     {
         name: "Weather Forecast",
         description: "Weather App",
         link: "https://yashgupta-24.github.io/Weather-Forecast/",
-        image: "src/assets/Projects/WF.png",
+        image: WF,
         displayMain:true
     },
     {
         name: "Trash Master",
         description: "SIH Project",
         link: "https://vishesh-04.github.io/TrashMaster/",
-        image: "src/assets/Projects/TM.png",
+        image: TM,
         displayMain:true
     },
     {
         name: "Tic-Tac-Toe",
         description: "Fun Game",
         link: "https://yashgupta-24.github.io/Tic-Tac-Toe/",
-        image: "src/assets/Projects/TM.png",
+        image: "",
         displayMain:false
     },
     {
         name: "Calculator",
         description: "Simple Project",
         link: "https://yashgupta-24.github.io/calculator/",
-        image: "src/assets/Projects/TM.png",
+        image: "",
         displayMain:false
     },
     {
         name: "Currency Convertor",
         description: "API Management",
         link: "https://yashgupta-24.github.io/Currency-Convertor/",
-        image: "src/assets/Projects/TM.png",
+        image: "",
         displayMain:false
     },
     {
         name: "Stone-Paper-Scissors",
         description: "Fun Game",
         link: "https://yashgupta-24.github.io/Stone-Paper-Scissors/",
-        image: "src/assets/Projects/TM.png",
+        image: "",
         displayMain:false
     }
 ]
