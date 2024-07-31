@@ -44,8 +44,8 @@ function ContactForm() {
         display ?
             <div className=' h-full w-3/4 lg:w-1/2 flex flex-col my-28 '>
               <img src={picture} alt="" className='h-20 w-20 sm:h-24 sm:w-24 my-4' />
-              <h1 className='text-4xl my-5 font-heading text-heading'>Let's Work Together</h1>
-              <p className='my-8 font-body font-semibold'>Please answer the following questions so I can get an idea of what you're looking for.</p>
+              <h1 className='text-2xl md:text-4xl my-4 font-heading text-heading'>Let's Work Together</h1>
+              <p className='text-sm md:text-base my-8 font-body font-semibold'>Please answer the following questions so I can get an idea of what you're looking for.</p>
               <form name='response-form' onSubmit={(e) => submitForm(e)}>
                 <h1 className='font-body font-semibold'>What's your email</h1>
                 <input
@@ -92,7 +92,7 @@ function ContactForm() {
                   step={0.01}
                   value={budget}
                   onChange={(e) => setBudget(e.target.value)} />
-                <input type="submit" className='sm:w-1/6 p-1 flex gap-2 items-center justify-center rounded-lg bg-tertiary text-white font-semibold mt-3 font-heading cursor-pointer hover:bg-hover transition-all duration-200' value='Submit' id='submit' />
+                <input type="submit" className='w-fit sm:w-1/6 p-2 sm:p-1 flex rounded-lg bg-tertiary text-white font-semibold mt-3 font-heading cursor-pointer hover:bg-hover transition-all duration-200 text-sm md:text-base' value='Submit' id='submit' />
               </form>
             </div>
             :
