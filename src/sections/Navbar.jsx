@@ -14,7 +14,7 @@ function Navbar() {
   return (
     <>
       <div className='h-20 w-3/4 flex justify-between items-center fixed top-0 z-50 rounded-xl px-3 backdrop-blur-lg text-heading'>
-        <NavLink to={"/"} className='font-logo text-3xl font-bold'>YG</NavLink>
+        <NavLink to={"/"} className='font-logo text-lg md:text-3xl font-bold'>YG</NavLink>
         <div className='w-1/2 lg:w-2/5 md:flex justify-evenly hidden font-heading font-bold'>
           <NavLink to={"/"} style={navLinkStyle} className="hover:text-tertiary">Home</NavLink>
           <NavLink to={"/works"} style={navLinkStyle} className="hover:text-tertiary">Work</NavLink>

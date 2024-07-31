@@ -1,10 +1,9 @@
-import React, { useState } from 'react'
+import React, { useState} from 'react'
 import Navbar from '../sections/Navbar'
 import Footer from '../sections/Footer';
 import picture from '../assets/picture.jpg'
 import ScrollToTop from '../ScrollToTop';
 import { HiArrowRight } from "react-icons/hi";
-import {createDetails} from "./Service.js"
 
 function ContactForm() {
 
@@ -12,17 +11,20 @@ function ContactForm() {
   const [name, setName] = useState('');
   const [site, setSite] = useState('');
   const [desc, setDesc] = useState('');
-  const [budget, setBudget] = useState(0);
+  const [budget, setBudget] = useState(0.0);
 
-  const submitForm = (e) => {
-    e.preventDefault();
-    const details={email, name, site, desc, budget};
+  const submitForm = () =>{
+    const script='https://script.google.com/macros/s/AKfycbykGCU8T0e0tMTlx-iQm740-H0DTyCeit5S9gmGEXFqdM4tC9yeXwc0QL_G_qBzNr9W4w/exec'
 
-    createDetails(details).then((response)=>{
-      console.log(response.data);
-    });
+    const form=document.forms['response-form'];
 
-    reset();
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(script, { method: 'POST', body: new FormData(form)})
+      .then(response => alert("Thank you! your form is submitted successfully." ))
+      .then(() => { reset(); })
+      .catch(error => console.error('Error!', error.message))
+  })
   }
 
   const reset=()=>{
@@ -39,48 +41,54 @@ function ContactForm() {
       <Navbar />
       <div className=' h-full w-3/4 lg:w-1/2 flex flex-col my-28 '>
         <img src={picture} alt="" className='h-20 w-20 sm:h-24 sm:w-24 my-4' />
-        <h1 className='text-4xl my-5 font-heading'>Let's Work Together</h1>
+        <h1 className='text-4xl my-5 font-heading text-heading'>Let's Work Together</h1>
         <p className='my-8 font-body font-semibold'>Please answer the following questions so I can get an idea of what you're looking for.</p>
-        <form>
+        <form name='response-form'>
           <h1 className='font-body font-semibold'>What's your email</h1>
           <input
-            className='border-2 border-gray-300 w-full sm:w-1/3 my-3 h-8 rounded-md font-body font-semibold'
+            className='border-2 border-heading w-full sm:w-1/3 my-3 h-8 rounded-md font-body font-semibold outline-none focus:border-[3px] focus:border-tertiary pl-1'
             type="email"
             required
             id='email'
+            name='email'
             value={email}
             onChange={(e) => setEmail(e.target.value)} />
           <h1 className='font-body font-semibold'>What's your name</h1>
           <input 
-            className='border-2 border-gray-300 w-full sm:w-1/3 my-3 h-8 rounded-md font-body font-semibold' 
+            className='border-2 border-heading w-full sm:w-1/3 my-3 h-8 rounded-md font-body font-semibold outline-none focus:border-[3px] focus:border-tertiary pl-1' 
             type="text" 
             required 
             id='name' 
+            name='name'
             value={name}
             onChange={(e) => setName(e.target.value)}/>
           <h1 className='font-body font-semibold'>Where can I find your website, if you have one</h1>
           <input 
-            className='border-2 border-gray-300 w-full sm:w-1/3 my-3 h-8 rounded-md font-body font-semibold' 
-            type="url" 
+            className='border-2 border-heading w-full sm:w-1/3 my-3 h-8 rounded-md font-body font-semibold outline-none focus:border-[3px] focus:border-tertiary pl-1' 
+            type="text" 
             id='website' 
+            name='site'
             value={site}
             onChange={(e) => setSite(e.target.value)}/>
           <h1 className='font-body font-semibold'>Tell me about the project</h1>
           <textarea 
-            className='border-2 border-gray-300 w-full sm:w-1/3 my-3 rounded-md font-body font-semibold' 
+            className='border-2 border-heading w-full sm:w-1/3 my-3 rounded-md font-body font-semibold outline-none focus:border-[3px] focus:border-tertiary pl-1' 
             required 
             id='desc'
+            name='desc'
             value={desc}
             onChange={(e) => setDesc(e.target.value)}></textarea>
-          <h1 className='font-body font-semibold'>What's the budget of this project?</h1>
+          <h1 className='font-body font-semibold'>What's the ballpark budget of this project?</h1>
           <input 
-            className='border-2 border-gray-300 w-full sm:w-1/3 my-3 h-8 rounded-md font-body font-semibold' 
+            className='border-2 border-heading w-full sm:w-1/3 my-3 h-8 rounded-md font-body font-semibold outline-none focus:border-[3px] focus:border-tertiary pl-1' 
             type="number" 
             required 
             id='budget' 
+            name='budget'
+            min={0}
             value={budget}
             onChange={(e) => setBudget(e.target.value)}/>
-          <button className='sm:w-1/6 p-1 flex gap-2 items-center justify-center rounded-lg bg-tertiary text-white font-semibold mt-3 font-heading' onClick={submitForm} >Submit <HiArrowRight /></button>
+          <button type="submit" className='sm:w-1/6 p-1 flex gap-2 items-center justify-center rounded-lg bg-tertiary text-white font-semibold mt-3 font-heading cursor-pointer hover:bg-hover transition-all duration-200' value='Submit' id='submit' onClick={submitForm}>Submit <HiArrowRight /></button>
         </form>
       </div>
       <Footer />

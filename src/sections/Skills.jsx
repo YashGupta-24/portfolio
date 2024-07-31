@@ -44,7 +44,7 @@ function Skills() {
     },
     {
       name: "Web Development",
-      list: ["HTML & CSS", "Bootstrap & Tailwind", "React.js"]
+      list: ["HTML & CSS", "Tailwind", "React.js"]
     },
     {
       name: "Data Structure & Algorithms",
@@ -65,7 +65,7 @@ function Skills() {
        {
         skillList.map((item, index)=>{
           return(
-            <div key={index} className='m-3 p-3 border-2 border-extra rounded-md'>
+            <div key={index} className='m-3 p-3 border-2 border-heading rounded-md'>
               <h1 className='text-sm sm:text-xl mb-2 font-heading'>{item.name}</h1>
                 {item.list.map((skill, index) => {
                   return <li key={index} className='text-xs sm:text-base font-body font-semibold'>{skill}</li>
@@ -77,7 +77,7 @@ function Skills() {
       </div>
       <ResponsiveContainer className='hidden md:flex'>
         <BarChart data={skill} width="100%" height="100%">
-          <XAxis dataKey="name" className='text-[7px] md:text-[10px] lg:text-base font-heading font-bold'></XAxis>
+          <XAxis dataKey="name" className='text-[8px] md:text-[10px] lg:text-base font-heading font-bold md:font-extrabold'></XAxis>
           <YAxis className='font-heading'/>
           <Tooltip />
           <Bar dataKey="level" fill='#226F54'/>

@@ -5,7 +5,7 @@ import { FaCode } from "react-icons/fa6";
 import { FaHeart } from "react-icons/fa6";
 function Footer() {
   return (
-    <div className='w-3/4 flex flex-col md:flex-row md:h-32 justify-between items-center text-[10px] sm:text-sm md:text-base text-heading font-bold font-heading'>
+    <div className='w-3/4 flex flex-col md:flex-row md:h-32 justify-between items-center text-[9px] sm:text-sm md:text-base text-heading font-bold font-heading'>
       <div>
         <div className='flex justify-evenly mb-3'>
         <a href="mailto:yashgupta.miet2026@gmail.com" className='hover:text-tertiary'>Email</a>
