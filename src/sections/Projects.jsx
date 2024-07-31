@@ -1,13 +1,64 @@
-import React, { useState, useEffect } from 'react'
 import {Link} from 'react-router-dom'
 import { HiArrowRight } from "react-icons/hi";
 function Projects() {
-  const [data, setData] = useState([]);
-  useEffect(() => {
-    fetch('/data/Projects.json')
-      .then(response => response.json())
-      .then(data => setData(data));
-  }, []);
+  const data=[
+    {
+        name: "Fetch-a-Thon 2.0",
+        description: "Event Page",
+        link: "",
+        image: "src/assets/Projects/FAT.png",
+        displayMain:true
+    },
+    {
+        name: "CXI",
+        description: "Landing Page",
+        link: "",
+        image: "src/assets/Projects/CXI.png",
+        displayMain:true
+    },
+    {
+        name: "Weather Forecast",
+        description: "Weather App",
+        link: "https://yashgupta-24.github.io/Weather-Forecast/",
+        image: "src/assets/Projects/WF.png",
+        displayMain:true
+    },
+    {
+        name: "Trash Master",
+        description: "SIH Project",
+        link: "https://vishesh-04.github.io/TrashMaster/",
+        image: "src/assets/Projects/TM.png",
+        displayMain:true
+    },
+    {
+        name: "Tic-Tac-Toe",
+        description: "Fun Game",
+        link: "https://yashgupta-24.github.io/Tic-Tac-Toe/",
+        image: "src/assets/Projects/TM.png",
+        displayMain:false
+    },
+    {
+        name: "Calculator",
+        description: "Simple Project",
+        link: "https://yashgupta-24.github.io/calculator/",
+        image: "src/assets/Projects/TM.png",
+        displayMain:false
+    },
+    {
+        name: "Currency Convertor",
+        description: "API Management",
+        link: "https://yashgupta-24.github.io/Currency-Convertor/",
+        image: "src/assets/Projects/TM.png",
+        displayMain:false
+    },
+    {
+        name: "Stone-Paper-Scissors",
+        description: "Fun Game",
+        link: "https://yashgupta-24.github.io/Stone-Paper-Scissors/",
+        image: "src/assets/Projects/TM.png",
+        displayMain:false
+    }
+]
  
   return (
     <div className='h-full w-3/4 my-20 transit'>
