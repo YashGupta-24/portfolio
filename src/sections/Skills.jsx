@@ -1,8 +1,8 @@
 import React from 'react'
-import {ResponsiveContainer, BarChart, Bar, XAxis, YAxis, Tooltip} from 'recharts'
+import { ResponsiveContainer, BarChart, Bar, XAxis, YAxis, Tooltip } from 'recharts'
 function Skills() {
 
-  const skill=[
+  const skill = [
     {
       name: "Java",
       level: 75
@@ -37,7 +37,7 @@ function Skills() {
     },
   ]
 
-  const skillList=[
+  const skillList = [
     {
       name: "Programming Languages",
       list: ["Java", "Javascript", "Python", "C"]
@@ -62,25 +62,25 @@ function Skills() {
         <h1 className='text-4xl md:text-6xl my-5 font-heading text-heading'>Skills</h1>
       </div>
       <div className='grid grid-cols-1 sm:grid-cols-2 md:hidden'>
-       {
-        skillList.map((item, index)=>{
-          return(
-            <div key={index} className='m-3 p-3 border-2 border-heading rounded-md'>
-              <h1 className='text-sm sm:text-xl mb-2 font-heading'>{item.name}</h1>
+        {
+          skillList.map((item, index) => {
+            return (
+              <div key={index} className='m-3 p-3 border-2 border-heading rounded-md'>
+                <h1 className='text-sm sm:text-xl mb-2 font-heading'>{item.name}</h1>
                 {item.list.map((skill, index) => {
                   return <li key={index} className='text-xs sm:text-base font-body font-semibold'>{skill}</li>
                 })}
-            </div>
-          )
-        })
-       }
+              </div>
+            )
+          })
+        }
       </div>
       <ResponsiveContainer className='hidden md:flex'>
         <BarChart data={skill} width="100%" height="100%">
           <XAxis dataKey="name" className='text-[8px] md:text-[10px] lg:text-base font-heading font-bold md:font-extrabold'></XAxis>
-          <YAxis className='font-heading'/>
+          <YAxis className='font-heading' />
           <Tooltip />
-          <Bar dataKey="level" fill='#226F54'/>
+          <Bar dataKey="level" fill='#226F54' />
         </BarChart>
       </ResponsiveContainer>
     </div>

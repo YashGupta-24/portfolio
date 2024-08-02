@@ -6,10 +6,10 @@ function Navbar() {
     document.querySelector('.navbar').classList.toggle('hidden');
   }
 
-  const navLinkStyle =({isActive})=>{
-      return {
-        color: isActive ? '#A3333D' : ''
-      }
+  const navLinkStyle = ({ isActive }) => {
+    return {
+      color: isActive ? '#A3333D' : ''
+    }
   }
   return (
     <>

@@ -24,7 +24,7 @@ function Home() {
       <Projects />
       <Skills />
       <About />
-      <Button name="Let's Work Together" link="/contact" show={true}/>
+      <Button name="Let's Work Together" link="/contact" show={true} />
       <Footer />
     </div>
   )
