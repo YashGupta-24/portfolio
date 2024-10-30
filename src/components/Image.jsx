@@ -4,10 +4,12 @@ import { HiArrowLongRight } from "react-icons/hi2";
 import P1 from '../assets/Images/P1.jpg';
 import P2 from '../assets/Images/P2.jpg';
 import P3 from '../assets/Images/P3.jpg';
+import P4 from '../assets/Images/P4.jpg';
+import P5 from '../assets/Images/P5.jpg';
 
 function Image() {
     const [index, setIndex] = useState(0)
-    const slides = [P1, P2, P3]
+    const slides = [P1, P2, P3, P4, P5]
     useEffect(() => {
         const interval = setInterval(() => setIndex((prev) => (prev + 1) % slides.length), 4000)
         return () => clearInterval(interval)
