@@ -72,9 +72,9 @@ function Projects() {
               item.displayMain ?
                 <div className='w-full my-5'>
                   <a href={item.link} target='blank' className='flex gap-5 justify-center items-center mb-2'>
-                    <img src={item.image} alt="" className=' hover:-translate-y-3 transition-transform ease-in-out duration-700 rounded-xl h-72' />
+                    {/* <img src={item.image} alt="" className=' hover:-translate-y-3 transition-transform ease-in-out duration-700 rounded-xl h-72' /> */}
                     <div className='flex flex-col gap-5 w-full'>
-                      <h1 className='text-md sm:text-4xl my-1 font-heading'>{item.name}</h1>
+                      <h1 className='text-md sm:text-4xl my-1 font-heading text-heading'>{item.name}</h1>
                       <p className='text-sm sm:text-base font-body font-semibold text-justify'>{item.description}</p>
                       <h1 className='text-sm sm:text-base font-body font-semibold text-justify'>Tech Stack:</h1>
                       {

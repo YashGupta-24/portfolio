@@ -17,7 +17,7 @@ function Certifications() {
 
     return (
         <div className='h-full w-3/4 flex flex-col transit'>
-            <h1 className='text-3xl md:text-6xl my-5 font-heading text-heading'>Certifications</h1>
+            <h1 className='text-3xl md:text-5xl my-5 font-heading text-heading'>Certifications</h1>
             <div className='grid sm:grid-cols-2 gap-8'>
                 {
                     data.map((certificate, key)=>{
