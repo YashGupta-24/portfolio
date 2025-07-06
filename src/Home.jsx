@@ -4,6 +4,7 @@ import Hero from "./sections/Hero.jsx"
 import Projects from "./sections/Projects.jsx";
 import Skills from "./sections/Skills.jsx";
 import About from "./sections/About.jsx";
+import Certifications from "./sections/Certifications.jsx";
 import Socials from "./components/Socials.jsx";
 import Button from "./components/Button.jsx";
 import Footer from "./sections/Footer.jsx";
@@ -24,6 +25,7 @@ function Home() {
       <Projects />
       <Skills />
       <About />
+      <Certifications />
       <Button name="Let's Work Together" link="/contact" show={true} />
       <Footer />
     </div>

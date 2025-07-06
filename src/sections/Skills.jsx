@@ -1,98 +1,62 @@
-import React, { useState } from 'react'
-import { ResponsiveContainer, BarChart, Bar, XAxis, YAxis, Tooltip } from 'recharts'
 function Skills() {
-
-  const [choice, setChoice]=useState('Programming Languages');
-
-  const skill = [
-    {
-      name: "Java",
-      level: 75
-    },
-    {
-      name: "Javascript",
-      level: 70
-    },
-    {
-      name: "React.js",
-      level: 60
-    },
-    {
-      name: "HTML & CSS",
-      level: 85
-    },
-    {
-      name: "Tailwind",
-      level: 80
-    },
-    {
-      name: "DSA",
-      level: 60
-    },
-    {
-      name: "Git & Github",
-      level: 80
-    },
-    {
-      name: "SpringBoot",
-      level: 50
-    },
-  ]
 
   const skillList = [
     {
       name: "Programming Languages",
-      list: ["Java", "Javascript", "Python", "C"]
+      list: ["Java", "Python", "Javascript", "C"]
     },
     {
-      name: "Web Development",
+      name: "Agentic AI",
+      list: ["uAgents", "LangChain", "LangGraph", "Multi-Agent Systems"]
+    },
+    {
+      name: "Frontend",
       list: ["HTML", "CSS", "Tailwind", "React.js"]
     },
     {
-      name: "Data Structure & Algorithms",
-      list: ["Oops", "Arrays", "Strings", "Linked List", "Stacks", "Queue", "Searching", "Sorting", "Recursion"]
+      name: "Backend",
+      list: ["Spring Boot", "FastAPI", "Flask", "Node.js"]
     },
     {
-      name: "Version Control",
-      list: ["Git", "Github"]
+      name: "Database",
+      list: ["MongoDb", "MySQL"]
+    },
+    {
+      name: "Cloud Services",
+      list: ["AWS", "Azure "]
+    },
+    {
+      name: "Tools",
+      list: ["Git& GitHub", "Postman", "VS Code", "Figma", "Canva"]
+    },
+    {
+      name: "Core CS",
+      list: ["OOPs", "DSA", "Time & Space Complexity", "System Design", "DBMS", "Computer Networks"]
     },
   ]
 
   return (
-    <div className='h-full md:h-screen w-3/4 flex flex-col mb-10 md:mb-20 transit'>
-      <div>
-        <h1 className='text-4xl md:text-6xl my-5 font-heading text-heading'>Skills</h1>
-      </div>
-      <div className='md:hidden'>
-        <div className='grid grid-cols-2 gap-4 mb-4'>
-          <button className='p-4 sm:p-6 rounded-xl sm:rounded-3xl bg-tertiary text-[8px] sm:text-xs text-white font-heading hover:bg-hover focus:bg-hover transition-all duration-300' onClick={(e)=>setChoice(e.target.name)} name="Programming Languages">Programming Languages</button>
-          <button className='p-4 sm:p-6 rounded-xl sm:rounded-3xl bg-tertiary text-[8px] sm:text-xs text-white font-heading hover:bg-hover focus:bg-hover transition-all duration-300' onClick={(e)=>setChoice(e.target.name)} name="Web Development">Web Development</button>
-          <button className='p-4 sm:p-6 rounded-xl sm:rounded-3xl bg-tertiary text-[8px] sm:text-xs text-white font-heading hover:bg-hover focus:bg-hover transition-all duration-300' onClick={(e)=>setChoice(e.target.name)} name="Data Structure & Algorithms">Data Structure & Algorithms</button>
-          <button className='p-4 sm:p-6 rounded-xl sm:rounded-3xl bg-tertiary text-[8px] sm:text-xs text-white font-heading hover:bg-hover focus:bg-hover transition-all duration-300' onClick={(e)=>setChoice(e.target.name)} name="Version Control">Version Control</button>
-        </div>
-        <div>
-          {
-            skillList.map((item, index) => {
-              if(item.name === choice)
-              return (
-                <div key={index} className='m-3 p-3 border-2 border-heading rounded-md grid grid-cols-2'>
+    <div className='h-full md:h-screen w-3/4 flex flex-col mb-10 md:mb-44 lg:mb-20 transit'>
+      <h1 className='text-4xl md:text-6xl my-5 font-heading text-heading'>Skills</h1>
+      <div className='grid sm:grid-cols-2 gap-8'>
+        {
+          skillList.map((item, index) => {
+            return (
+              <div >
+                <h1 className='sm:my-3 text-md md:text-xl font-heading text-heading font-semibold'>{item.name}</h1>
+                <div key={index} className='m-3 p-3 rounded-md grid sm:grid-cols-2'>
                   {item.list.map((skill, index) => {
-                    return <li key={index} className='text-[0.6rem] sm:text-base font-body font-semibold'>{skill}</li>
+                    return (
+                      <li key={index} className='text-sm sm:text-base font-body font-semibold'>{skill}</li>
+                    )
                   })}
                 </div>
-              )
-            })
-          }
-        </div>
+                <hr className='border-[1px] border-heading' />
+              </div>
+            )
+          })
+        }
       </div>
-      <ResponsiveContainer className='hidden md:flex'>
-        <BarChart data={skill} width="100%" height="100%">
-          <XAxis dataKey="name" className='text-[8px] md:text-[10px] lg:text-base font-heading font-bold md:font-extrabold'></XAxis>
-          <YAxis className='font-heading' />
-          <Tooltip />
-          <Bar dataKey="level" fill='#226F54' />
-        </BarChart>
-      </ResponsiveContainer>
     </div>
   )
 }

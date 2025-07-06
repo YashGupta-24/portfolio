@@ -7,17 +7,17 @@ import ScrollToTop from '../ScrollToTop.jsx';
 function AboutDetail() {
 
   const data = [{
-    desc: " I'm Yash Gupta, a passionate and dedicated software developer with a focus on creating seamless and impactful digital experiences. With a strong foundation in both frontend and backend development, I specialize in transforming complex problems into elegant and user-friendly solutions. My goal is to leverage technology to make a positive impact, ensuring that every project I undertake is both functional and aesthetically pleasing.",
+    desc: " I'm Yash Gupta, a Computer Science Engineering student with a deep passion for building scalable, real-world software solutions that blend functionality with impact. With strong hands-on experience across both frontend and backend development, I specialize in translating complex problems into elegant, user-centric applications powered by React.js, Spring Boot, MongoDB, and cloud platforms like AWS.",
     background: {
-      p1: "I embarked on my journey in the tech world at the Meerut Institute of Engineering & Technology (MIET), where I developed a solid foundation in software engineering.",
-      p2: "Throughout my academic career, I have consistently sought opportunities to expand my knowledge and skills, participating in various workshops, hackathons, and coding competitions."
+      p1: "I began my tech journey at the Meerut Institute of Engineering & Technology (MIET), where I laid the foundation for my passion in full-stack development and AI-driven systems.",
+      p2: "Since then, I've built projects that solve real-world challenges—ranging from AI-powered traffic light optimization to a Fake News Detection System using multi-agent architectures and LLMs."
     },
     leadership: {
-      heading: "Lead of Microsoft Learn Student Ambassadors (MLSA) at MIET",
-      content: "As the leader of MLSA at MIET, I have had the privilege of working with a diverse group of talented individuals. In this role, I organize and lead events that foster a community of learning and innovation. This experience has honed my leadership, collaboration, and project management skills, and has been instrumental in my growth as a tech enthusiast and community builder."
+      heading: "Leadership Experience",
+      content: "As the Lead of Microsoft Learn Student Ambassadors (MLSA) at MIET, I led 30+ technical events and workshops while managing a team of 6 core members and 30+ volunteers across various domains. I’ve also been an active member of the Fetch.ai Developers Group, Meerut, where I explored decentralized multi-agent solutions and contributed to intelligent systems."
     },
-    interest: "I am particularly passionate about frontend development, where I can combine my technical expertise with a keen eye for design to create intuitive and engaging user experiences. However, my interests are not limited to the frontend; I constantly try to get skilled in backend development and enjoy working on full-stack projects that require a holistic approach.",
-    goals: "My goal is to leverage my skills and experience to contribute to impactful projects that make a difference in people's lives. I am constantly exploring new technologies and methodologies to stay at the forefront of the ever-evolving tech landscape. I believe in the power of technology to solve real-world problems, and I am dedicated to making technology accessible and beneficial to all.",
+    interest: "I'm particularly passionate about: Frontend Development – bringing UI/UX to life with thoughtful design. AI & Multi-Agent Systems – building autonomous agents that interact intelligently. Full-Stack Engineering – creating complete, end-to-end applications. Cloud Computing (AWS, Azure) – scaling solutions for real-world deployment",
+    goals: "I aim to leverage my technical and leadership skills to contribute to meaningful software projects that make life easier, smarter, and more connected. I believe in using technology as a force for good—solving problems that truly matter, and I am dedicated to making it accessible and beneficial to all.",
     hobbies: ["Traveling", "Reading", "Spiritual Practices"]
   }];
 
