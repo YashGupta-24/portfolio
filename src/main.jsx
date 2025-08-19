@@ -5,6 +5,7 @@ import Home from './Home.jsx'
 import Work from './pages/Work.jsx'
 import AboutDetail from './pages/AboutDetail.jsx'
 import ContactForm from './pages/ContactForm.jsx';
+import Experience from './pages/Experience.jsx';
 import './index.css'
 
 const router = createBrowserRouter([
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
   {
     path: "/contact",
     element: <ContactForm />,
+  },
+  {
+    path: "/experience",
+    element: <Experience />,
   },
 ]);
 

@@ -10,7 +10,7 @@ function Hero() {
                 <img src={picture} alt="" className='h-20 w-20 sm:h-24 sm:w-24 my-4' />
                 <div className='my-2 border-[1px] border-black w-fit px-2 rounded-2xl bg-gray-300 flex justify-between items-center text-xs sm:text-base gap-2 font-body font-semibold'> <FcInfo /> Looking for Work</div>
                 <h1 className='mt-4 text-base md:text-2xl leading-tight font-heading font-bold md:font-normal text-heading'>CSE Student at MIET,</h1>
-                <h1 className='mb-4 text-base md:text-2xl leading-tight font-heading font-bold md:font-normal text-heading'>Ex-Lead @Microsoft Learn Student Ambassadors (MLSA), MIET & <br></br>AI Developer @Fetch.Ai Developers Group, Meerut</h1>
+                <h1 className='mb-4 text-base md:text-2xl leading-tight font-heading font-bold md:font-normal text-heading'>Ex-Lead @Microsoft Learn Student Ambassadors, MIET & <br></br>AI Developer @Fetch.ai Developers Group, Meerut</h1>
                 <p className='my-6 font-body font-semibold text-justify'>Hi, I’m Yash Gupta — a passionate developer, building real-world solutions using full-stack development and Artificial Intelligent systems. With hands-on experience in projects involving LLMs, multi-agent architectures, and cloud-based applications, I specialize in crafting scalable, user-focused platforms. 
 
                 </p>

@@ -19,6 +19,7 @@ function Navbar() {
           <NavLink to={"/"} style={navLinkStyle} className="hover:text-tertiary">Home</NavLink>
           <NavLink to={"/works"} style={navLinkStyle} className="hover:text-tertiary">Work</NavLink>
           <NavLink to={"/about"} style={navLinkStyle} className="hover:text-tertiary">About</NavLink>
+          <NavLink to={"/experience"} style={navLinkStyle} className="hover:text-tertiary">Experience</NavLink>
           <a href="https://www.canva.com/design/DAF6KUUNhJI/Ulwm3m7yiTVS-2s63dUORA/view?utm_content=DAF6KUUNhJI&utm_campaign=designshare&utm_medium=link&utm_source=editor" target='blank' className="hover:text-tertiary">Resume</a>
         </div>
         <div className='md:hidden'>
@@ -30,6 +31,7 @@ function Navbar() {
           <NavLink to={"/"} style={navLinkStyle} className="hover:text-tertiary">Home</NavLink>
           <NavLink to={"/works"} style={navLinkStyle} className="hover:text-tertiary">Work</NavLink>
           <NavLink to={"/about"} style={navLinkStyle} className="hover:text-tertiary">About</NavLink>
+          <NavLink to={"/experience"} style={navLinkStyle} className="hover:text-tertiary">Experience</NavLink>
           <a href="https://www.canva.com/design/DAF6KUUNhJI/Ulwm3m7yiTVS-2s63dUORA/view?utm_content=DAF6KUUNhJI&utm_campaign=designshare&utm_medium=link&utm_source=editor" target='blank' className="hover:text-tertiary">Resume</a>
         </div>
       </div>

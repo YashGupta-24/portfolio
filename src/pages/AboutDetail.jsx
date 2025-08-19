@@ -9,7 +9,7 @@ function AboutDetail() {
   const data = [{
     desc: " I'm Yash Gupta, a Computer Science Engineering student with a deep passion for building scalable, real-world software solutions that blend functionality with impact. With strong hands-on experience across both frontend and backend development, I specialize in translating complex problems into elegant, user-centric applications powered by React.js, Spring Boot, MongoDB, and cloud platforms like AWS.",
     background: {
-      p1: "I began my tech journey at the Meerut Institute of Engineering & Technology (MIET), where I laid the foundation for my passion in full-stack development and AI-driven systems.",
+      little: "I began my tech journey at the Meerut Institute of Engineering & Technology (MIET), where I laid the foundation for my passion in full-stack development and AI-driven systems.",
       p2: "Since then, I've built projects that solve real-world challenges—ranging from AI-powered traffic light optimization to a Fake News Detection System using multi-agent architectures and LLMs."
     },
     leadership: {
@@ -34,7 +34,7 @@ function AboutDetail() {
                 <div key={index} className='my-10 '>
                   <p className='my-6 text-sm sm:text-base font-body font-semibold text-justify'>{item.desc}</p>
                   <h1 className='my-3 text-xl font-semibold font-heading text-heading'>Little Background</h1>
-                  <p className='my-6 text-sm sm:text-base font-body font-semibold text-justify'>{item.background.p1}</p>
+                  <p className='my-6 text-sm sm:text-base font-body font-semibold text-justify'>{item.background.little}</p>
                   <p className='my-6 text-sm sm:text-base font-body font-semibold text-justify'>{item.background.p2}</p>
                   <h1 className='my-3 text-xl font-semibold font-heading text-heading'>{item.leadership.heading}</h1>
                   <p className='my-6 text-sm sm:text-base font-body font-semibold text-justify'>{item.leadership.content}</p>
